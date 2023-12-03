@@ -1,0 +1,15 @@
+<problems>
+<problem>
+  <file>file://$PROJECT_DIR$/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java</file>
+  <line>40</line>
+  <module>mybatis-jakarta-jpa</module>
+  <package>io.mybatis.provider.jpa</package>
+  <entry_point TYPE="method" FQNAME="io.mybatis.provider.jpa.JakartaJpaEntityColumnFactory java.util.Optional&lt;java.util.List&lt;io.mybatis.provider.EntityColumn&gt;&gt; createEntityColumn(io.mybatis.provider.EntityTable entityTable, io.mybatis.provider.EntityField field, io.mybatis.provider.EntityColumnFactory.Chain chain)" />
+  <problem_class id="SimplifyOptionalCallChains" severity="WARNING" attribute_key="WARNING_ATTRIBUTES">Optional call chain can be simplified</problem_class>
+  <description>Can be replaced with 'isEmpty()'</description>
+  <highlighted_element>isPresent</highlighted_element>
+  <language>JAVA</language>
+  <offset>69</offset>
+  <length>9</length>
+</problem>
+</problems>

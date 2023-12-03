@@ -32,6 +32,10 @@ import java.util.Optional;
  */
 public class JakartaJpaEntityColumnFactory implements EntityColumnFactory {
 
+  @SuppressWarnings({
+      "OptionalContainsCollection", // intellij-suppression-optional-contains-collection
+      "SimplifyOptionalCallChains" // intellij-suppresssion-simplify-optional-call-chains
+  })
   @Override
   public Optional<List<EntityColumn>> createEntityColumn(EntityTable entityTable, EntityField field, Chain chain) {
     Optional<List<EntityColumn>> optionalEntityColumns = chain.createEntityColumn(entityTable, field);
