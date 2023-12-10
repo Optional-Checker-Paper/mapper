@@ -34,7 +34,7 @@ import java.util.Optional;
 public class JpaEntityColumnFactory implements EntityColumnFactory {
 
   @Override
-  @SuppressWarnings("optional:optional.collection") // optional-collection : use of optional to wrap a collection
+  @SuppressWarnings("optional:optional.collection") // optional-collection
   public Optional<List<EntityColumn>> createEntityColumn(EntityTable entityTable, EntityField field, Chain chain) {
     Optional<List<EntityColumn>> optionalEntityColumns = chain.createEntityColumn(entityTable, field);
     if (field.isAnnotationPresent(Transient.class)) {
