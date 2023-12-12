@@ -33,7 +33,7 @@ import java.util.Optional;
 public class JakartaJpaEntityColumnFactory implements EntityColumnFactory {
 
   @Override
-  @SuppressWarnings("optional:optional.collection") // optional-collection
+  @SuppressWarnings("optional:optional.collection") // style-optional-collection
   public Optional<List<EntityColumn>> createEntityColumn(EntityTable entityTable, EntityField field, Chain chain) {
     Optional<List<EntityColumn>> optionalEntityColumns = chain.createEntityColumn(entityTable, field);
     if (field.isAnnotationPresent(Transient.class)) {
