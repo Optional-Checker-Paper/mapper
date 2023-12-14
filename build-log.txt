@@ -1,0 +1,272 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] mybatis-parent                                                     [pom]
+[INFO] mapper-bom                                                         [pom]
+[INFO] mybatis-common                                                     [jar]
+[INFO] mybatis-mapper                                                     [jar]
+[INFO] mybatis-service                                                    [jar]
+[INFO] mybatis-activerecord                                               [jar]
+[INFO] mybatis-generator                                                  [jar]
+[INFO] mybatis-jpa                                                        [jar]
+[INFO] mybatis-jakarta-jpa                                                [jar]
+[INFO] 
+[INFO] ---------------------< io.mybatis:mybatis-parent >----------------------
+[INFO] Building mybatis-parent 2.2.0-SNAPSHOT                             [1/9]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 3.1 kB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.pom
+Progress (1): 2.1 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.pom (2.1 kB at 28 kB/s)
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-parent ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-parent:pom:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] -----------------------< io.mybatis:mapper-bom >------------------------
+[INFO] Building mapper-bom 2.2.0-SNAPSHOT                                 [2/9]
+[INFO]   from bom/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mapper-bom ---
+[INFO] Generating flattened POM of project io.mybatis:mapper-bom:pom:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] ---------------------< io.mybatis:mybatis-common >----------------------
+[INFO] Building mybatis-common 2.2.0-SNAPSHOT                             [3/9]
+[INFO]   from common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.jar
+Progress (1): 7.8/230 kBProgress (1): 16/230 kB Progress (1): 16/230 kBProgress (1): 33/230 kBProgress (1): 41/230 kBProgress (1): 49/230 kBProgress (1): 66/230 kBProgress (1): 82/230 kBProgress (1): 98/230 kBProgress (1): 115/230 kBProgress (1): 131/230 kBProgress (1): 147/230 kBProgress (1): 164/230 kBProgress (1): 180/230 kBProgress (1): 197/230 kBProgress (1): 213/230 kBProgress (1): 229/230 kBProgress (1): 230 kB                        Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-qual/3.41.1-SNAPSHOT/checker-qual-3.41.1-20231214.154806-13.jar (230 kB at 659 kB/s)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-common ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-common ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-common:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-common ---
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 20 kB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.pom
+Progress (1): 2.4 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.pom (2.4 kB at 33 kB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/maven-metadata.xml
+Progress (1): 1.4 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/maven-metadata.xml (1.4 kB at 19 kB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.pom
+Progress (1): 2.3 kB                    Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.pom (2.3 kB at 31 kB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.jar
+Progress (1): 0/13 MBProgress (1): 0/13 MBProgress (1): 0/13 MBProgress (1): 0/13 MBProgress (1): 0/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.1/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.2/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.3/13 MBProgress (1): 0.4/13 MBProgress (1): 0.4/13 MBProgress (1): 0.4/13 MBProgress (1): 0.4/13 MBProgress (1): 0.4/13 MBProgress (1): 0.4/13 MBProgress (1): 0.5/13 MBProgress (1): 0.5/13 MBProgress (1): 0.5/13 MBProgress (1): 0.5/13 MBProgress (1): 0.5/13 MBProgress (1): 0.5/13 MBProgress (1): 0.6/13 MBProgress (1): 0.6/13 MBProgress (1): 0.6/13 MBProgress (1): 0.6/13 MBProgress (1): 0.6/13 MBProgress (1): 0.6/13 MBProgress (1): 0.7/13 MBProgress (1): 0.7/13 MBProgress (1): 0.7/13 MBProgress (1): 0.7/13 MBProgress (1): 0.7/13 MBProgress (1): 0.7/13 MBProgress (1): 0.8/13 MBProgress (1): 0.8/13 MBProgress (1): 0.8/13 MBProgress (1): 0.8/13 MBProgress (1): 0.8/13 MBProgress (1): 0.8/13 MBProgress (1): 0.9/13 MBProgress (1): 0.9/13 MBProgress (1): 0.9/13 MBProgress (1): 0.9/13 MBProgress (1): 0.9/13 MBProgress (1): 0.9/13 MBProgress (1): 1.0/13 MBProgress (1): 1.0/13 MBProgress (1): 1.0/13 MBProgress (1): 1.0/13 MBProgress (1): 1.0/13 MBProgress (1): 1.0/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.1/13 MBProgress (1): 1.2/13 MBProgress (1): 1.2/13 MBProgress (1): 1.2/13 MBProgress (1): 1.2/13 MBProgress (1): 1.2/13 MBProgress (1): 1.2/13 MBProgress (1): 1.3/13 MBProgress (1): 1.3/13 MBProgress (1): 1.3/13 MBProgress (1): 1.3/13 MBProgress (1): 1.3/13 MBProgress (1): 1.3/13 MBProgress (1): 1.4/13 MBProgress (1): 1.4/13 MBProgress (1): 1.4/13 MBProgress (1): 1.4/13 MBProgress (1): 1.4/13 MBProgress (1): 1.4/13 MBProgress (1): 1.5/13 MBProgress (1): 1.5/13 MBProgress (1): 1.5/13 MBProgress (1): 1.5/13 MBProgress (1): 1.5/13 MBProgress (1): 1.5/13 MBProgress (1): 1.6/13 MBProgress (1): 1.6/13 MBProgress (1): 1.6/13 MBProgress (1): 1.6/13 MBProgress (1): 1.6/13 MBProgress (1): 1.6/13 MBProgress (1): 1.7/13 MBProgress (1): 1.7/13 MBProgress (1): 1.7/13 MBProgress (1): 1.7/13 MBProgress (1): 1.7/13 MBProgress (1): 1.7/13 MBProgress (1): 1.8/13 MBProgress (1): 1.8/13 MBProgress (1): 1.8/13 MBProgress (1): 1.8/13 MBProgress (1): 1.8/13 MBProgress (1): 1.8/13 MBProgress (1): 1.9/13 MBProgress (1): 1.9/13 MBProgress (1): 1.9/13 MBProgress (1): 1.9/13 MBProgress (1): 1.9/13 MBProgress (1): 1.9/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.0/13 MBProgress (1): 2.1/13 MBProgress (1): 2.1/13 MBProgress (1): 2.1/13 MBProgress (1): 2.1/13 MBProgress (1): 2.1/13 MBProgress (1): 2.1/13 MBProgress (1): 2.2/13 MBProgress (1): 2.2/13 MBProgress (1): 2.2/13 MBProgress (1): 2.2/13 MBProgress (1): 2.2/13 MBProgress (1): 2.2/13 MBProgress (1): 2.3/13 MBProgress (1): 2.3/13 MBProgress (1): 2.3/13 MBProgress (1): 2.3/13 MBProgress (1): 2.3/13 MBProgress (1): 2.3/13 MBProgress (1): 2.4/13 MBProgress (1): 2.4/13 MBProgress (1): 2.4/13 MBProgress (1): 2.4/13 MBProgress (1): 2.4/13 MBProgress (1): 2.4/13 MBProgress (1): 2.5/13 MBProgress (1): 2.5/13 MBProgress (1): 2.5/13 MBProgress (1): 2.5/13 MBProgress (1): 2.5/13 MBProgress (1): 2.5/13 MBProgress (1): 2.6/13 MBProgress (1): 2.6/13 MBProgress (1): 2.6/13 MBProgress (1): 2.6/13 MBProgress (1): 2.6/13 MBProgress (1): 2.6/13 MBProgress (1): 2.7/13 MBProgress (1): 2.7/13 MBProgress (1): 2.7/13 MBProgress (1): 2.7/13 MBProgress (1): 2.7/13 MBProgress (1): 2.7/13 MBProgress (1): 2.8/13 MBProgress (1): 2.8/13 MBProgress (1): 2.8/13 MBProgress (1): 2.8/13 MBProgress (1): 2.8/13 MBProgress (1): 2.8/13 MBProgress (1): 2.9/13 MBProgress (1): 2.9/13 MBProgress (1): 2.9/13 MBProgress (1): 2.9/13 MBProgress (1): 2.9/13 MBProgress (1): 2.9/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.0/13 MBProgress (1): 3.1/13 MBProgress (1): 3.1/13 MBProgress (1): 3.1/13 MBProgress (1): 3.1/13 MBProgress (1): 3.1/13 MBProgress (1): 3.1/13 MBProgress (1): 3.2/13 MBProgress (1): 3.2/13 MBProgress (1): 3.2/13 MBProgress (1): 3.2/13 MBProgress (1): 3.2/13 MBProgress (1): 3.2/13 MBProgress (1): 3.3/13 MBProgress (1): 3.3/13 MBProgress (1): 3.3/13 MBProgress (1): 3.3/13 MBProgress (1): 3.3/13 MBProgress (1): 3.3/13 MBProgress (1): 3.4/13 MBProgress (1): 3.4/13 MBProgress (1): 3.4/13 MBProgress (1): 3.4/13 MBProgress (1): 3.4/13 MBProgress (1): 3.4/13 MBProgress (1): 3.5/13 MBProgress (1): 3.5/13 MBProgress (1): 3.5/13 MBProgress (1): 3.5/13 MBProgress (1): 3.5/13 MBProgress (1): 3.5/13 MBProgress (1): 3.6/13 MBProgress (1): 3.6/13 MBProgress (1): 3.6/13 MBProgress (1): 3.6/13 MBProgress (1): 3.6/13 MBProgress (1): 3.6/13 MBProgress (1): 3.7/13 MBProgress (1): 3.7/13 MBProgress (1): 3.7/13 MBProgress (1): 3.7/13 MBProgress (1): 3.7/13 MBProgress (1): 3.7/13 MBProgress (1): 3.8/13 MBProgress (1): 3.8/13 MBProgress (1): 3.8/13 MBProgress (1): 3.8/13 MBProgress (1): 3.8/13 MBProgress (1): 3.8/13 MBProgress (1): 3.9/13 MBProgress (1): 3.9/13 MBProgress (1): 3.9/13 MBProgress (1): 3.9/13 MBProgress (1): 3.9/13 MBProgress (1): 3.9/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.0/13 MBProgress (1): 4.1/13 MBProgress (1): 4.1/13 MBProgress (1): 4.1/13 MBProgress (1): 4.1/13 MBProgress (1): 4.1/13 MBProgress (1): 4.1/13 MBProgress (1): 4.2/13 MBProgress (1): 4.2/13 MBProgress (1): 4.2/13 MBProgress (1): 4.2/13 MBProgress (1): 4.2/13 MBProgress (1): 4.2/13 MBProgress (1): 4.3/13 MBProgress (1): 4.3/13 MBProgress (1): 4.3/13 MBProgress (1): 4.3/13 MBProgress (1): 4.3/13 MBProgress (1): 4.3/13 MBProgress (1): 4.4/13 MBProgress (1): 4.4/13 MBProgress (1): 4.4/13 MBProgress (1): 4.4/13 MBProgress (1): 4.4/13 MBProgress (1): 4.4/13 MBProgress (1): 4.5/13 MBProgress (1): 4.5/13 MBProgress (1): 4.5/13 MBProgress (1): 4.5/13 MBProgress (1): 4.5/13 MBProgress (1): 4.5/13 MBProgress (1): 4.6/13 MBProgress (1): 4.6/13 MBProgress (1): 4.6/13 MBProgress (1): 4.6/13 MBProgress (1): 4.6/13 MBProgress (1): 4.6/13 MBProgress (1): 4.7/13 MBProgress (1): 4.7/13 MBProgress (1): 4.7/13 MBProgress (1): 4.7/13 MBProgress (1): 4.7/13 MBProgress (1): 4.7/13 MBProgress (1): 4.8/13 MBProgress (1): 4.8/13 MBProgress (1): 4.8/13 MBProgress (1): 4.8/13 MBProgress (1): 4.8/13 MBProgress (1): 4.8/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 4.9/13 MBProgress (1): 5.0/13 MBProgress (1): 5.0/13 MBProgress (1): 5.0/13 MBProgress (1): 5.0/13 MBProgress (1): 5.0/13 MBProgress (1): 5.0/13 MBProgress (1): 5.1/13 MBProgress (1): 5.1/13 MBProgress (1): 5.1/13 MBProgress (1): 5.1/13 MBProgress (1): 5.1/13 MBProgress (1): 5.1/13 MBProgress (1): 5.2/13 MBProgress (1): 5.2/13 MBProgress (1): 5.2/13 MBProgress (1): 5.2/13 MBProgress (1): 5.2/13 MBProgress (1): 5.2/13 MBProgress (1): 5.3/13 MBProgress (1): 5.3/13 MBProgress (1): 5.3/13 MBProgress (1): 5.3/13 MBProgress (1): 5.3/13 MBProgress (1): 5.3/13 MBProgress (1): 5.4/13 MBProgress (1): 5.4/13 MBProgress (1): 5.4/13 MBProgress (1): 5.4/13 MBProgress (1): 5.4/13 MBProgress (1): 5.4/13 MBProgress (1): 5.5/13 MBProgress (1): 5.5/13 MBProgress (1): 5.5/13 MBProgress (1): 5.5/13 MBProgress (1): 5.5/13 MBProgress (1): 5.5/13 MBProgress (1): 5.6/13 MBProgress (1): 5.6/13 MBProgress (1): 5.6/13 MBProgress (1): 5.6/13 MBProgress (1): 5.6/13 MBProgress (1): 5.6/13 MBProgress (1): 5.7/13 MBProgress (1): 5.7/13 MBProgress (1): 5.7/13 MBProgress (1): 5.7/13 MBProgress (1): 5.7/13 MBProgress (1): 5.7/13 MBProgress (1): 5.8/13 MBProgress (1): 5.8/13 MBProgress (1): 5.8/13 MBProgress (1): 5.8/13 MBProgress (1): 5.8/13 MBProgress (1): 5.8/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 5.9/13 MBProgress (1): 6.0/13 MBProgress (1): 6.0/13 MBProgress (1): 6.0/13 MBProgress (1): 6.0/13 MBProgress (1): 6.0/13 MBProgress (1): 6.0/13 MBProgress (1): 6.1/13 MBProgress (1): 6.1/13 MBProgress (1): 6.1/13 MBProgress (1): 6.1/13 MBProgress (1): 6.1/13 MBProgress (1): 6.1/13 MBProgress (1): 6.2/13 MBProgress (1): 6.2/13 MBProgress (1): 6.2/13 MBProgress (1): 6.2/13 MBProgress (1): 6.2/13 MBProgress (1): 6.2/13 MBProgress (1): 6.3/13 MBProgress (1): 6.3/13 MBProgress (1): 6.3/13 MBProgress (1): 6.3/13 MBProgress (1): 6.3/13 MBProgress (1): 6.3/13 MBProgress (1): 6.4/13 MBProgress (1): 6.4/13 MBProgress (1): 6.4/13 MBProgress (1): 6.4/13 MBProgress (1): 6.4/13 MBProgress (1): 6.4/13 MBProgress (1): 6.5/13 MBProgress (1): 6.5/13 MBProgress (1): 6.5/13 MBProgress (1): 6.5/13 MBProgress (1): 6.5/13 MBProgress (1): 6.5/13 MBProgress (1): 6.6/13 MBProgress (1): 6.6/13 MBProgress (1): 6.6/13 MBProgress (1): 6.6/13 MBProgress (1): 6.6/13 MBProgress (1): 6.6/13 MBProgress (1): 6.7/13 MBProgress (1): 6.7/13 MBProgress (1): 6.7/13 MBProgress (1): 6.7/13 MBProgress (1): 6.7/13 MBProgress (1): 6.7/13 MBProgress (1): 6.8/13 MBProgress (1): 6.8/13 MBProgress (1): 6.8/13 MBProgress (1): 6.8/13 MBProgress (1): 6.8/13 MBProgress (1): 6.8/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 6.9/13 MBProgress (1): 7.0/13 MBProgress (1): 7.0/13 MBProgress (1): 7.0/13 MBProgress (1): 7.0/13 MBProgress (1): 7.0/13 MBProgress (1): 7.0/13 MBProgress (1): 7.1/13 MBProgress (1): 7.1/13 MBProgress (1): 7.1/13 MBProgress (1): 7.1/13 MBProgress (1): 7.1/13 MBProgress (1): 7.1/13 MBProgress (1): 7.2/13 MBProgress (1): 7.2/13 MBProgress (1): 7.2/13 MBProgress (1): 7.2/13 MBProgress (1): 7.2/13 MBProgress (1): 7.2/13 MBProgress (1): 7.3/13 MBProgress (1): 7.3/13 MBProgress (1): 7.3/13 MBProgress (1): 7.3/13 MBProgress (1): 7.3/13 MBProgress (1): 7.3/13 MBProgress (1): 7.4/13 MBProgress (1): 7.4/13 MBProgress (1): 7.4/13 MBProgress (1): 7.4/13 MBProgress (1): 7.4/13 MBProgress (1): 7.4/13 MBProgress (1): 7.5/13 MBProgress (1): 7.5/13 MBProgress (1): 7.5/13 MBProgress (1): 7.5/13 MBProgress (1): 7.5/13 MBProgress (1): 7.5/13 MBProgress (1): 7.6/13 MBProgress (1): 7.6/13 MBProgress (1): 7.6/13 MBProgress (1): 7.6/13 MBProgress (1): 7.6/13 MBProgress (1): 7.6/13 MBProgress (1): 7.7/13 MBProgress (1): 7.7/13 MBProgress (1): 7.7/13 MBProgress (1): 7.7/13 MBProgress (1): 7.7/13 MBProgress (1): 7.7/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.8/13 MBProgress (1): 7.9/13 MBProgress (1): 7.9/13 MBProgress (1): 7.9/13 MBProgress (1): 7.9/13 MBProgress (1): 7.9/13 MBProgress (1): 7.9/13 MBProgress (1): 8.0/13 MBProgress (1): 8.0/13 MBProgress (1): 8.0/13 MBProgress (1): 8.0/13 MBProgress (1): 8.0/13 MBProgress (1): 8.0/13 MBProgress (1): 8.1/13 MBProgress (1): 8.1/13 MBProgress (1): 8.1/13 MBProgress (1): 8.1/13 MBProgress (1): 8.1/13 MBProgress (1): 8.1/13 MBProgress (1): 8.2/13 MBProgress (1): 8.2/13 MBProgress (1): 8.2/13 MBProgress (1): 8.2/13 MBProgress (1): 8.2/13 MBProgress (1): 8.2/13 MBProgress (1): 8.3/13 MBProgress (1): 8.3/13 MBProgress (1): 8.3/13 MBProgress (1): 8.3/13 MBProgress (1): 8.3/13 MBProgress (1): 8.3/13 MBProgress (1): 8.4/13 MBProgress (1): 8.4/13 MBProgress (1): 8.4/13 MBProgress (1): 8.4/13 MBProgress (1): 8.4/13 MBProgress (1): 8.4/13 MBProgress (1): 8.5/13 MBProgress (1): 8.5/13 MBProgress (1): 8.5/13 MBProgress (1): 8.5/13 MBProgress (1): 8.5/13 MBProgress (1): 8.5/13 MBProgress (1): 8.6/13 MBProgress (1): 8.6/13 MBProgress (1): 8.6/13 MBProgress (1): 8.6/13 MBProgress (1): 8.6/13 MBProgress (1): 8.6/13 MBProgress (1): 8.7/13 MBProgress (1): 8.7/13 MBProgress (1): 8.7/13 MBProgress (1): 8.7/13 MBProgress (1): 8.7/13 MBProgress (1): 8.7/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.8/13 MBProgress (1): 8.9/13 MBProgress (1): 8.9/13 MBProgress (1): 8.9/13 MBProgress (1): 8.9/13 MBProgress (1): 8.9/13 MBProgress (1): 8.9/13 MBProgress (1): 9.0/13 MBProgress (1): 9.0/13 MBProgress (1): 9.0/13 MBProgress (1): 9.0/13 MBProgress (1): 9.0/13 MBProgress (1): 9.0/13 MBProgress (1): 9.1/13 MBProgress (1): 9.1/13 MBProgress (1): 9.1/13 MBProgress (1): 9.1/13 MBProgress (1): 9.1/13 MBProgress (1): 9.1/13 MBProgress (1): 9.2/13 MBProgress (1): 9.2/13 MBProgress (1): 9.2/13 MBProgress (1): 9.2/13 MBProgress (1): 9.2/13 MBProgress (1): 9.2/13 MBProgress (1): 9.3/13 MBProgress (1): 9.3/13 MBProgress (1): 9.3/13 MBProgress (1): 9.3/13 MBProgress (1): 9.3/13 MBProgress (1): 9.3/13 MBProgress (1): 9.4/13 MBProgress (1): 9.4/13 MBProgress (1): 9.4/13 MBProgress (1): 9.4/13 MBProgress (1): 9.4/13 MBProgress (1): 9.4/13 MBProgress (1): 9.5/13 MBProgress (1): 9.5/13 MBProgress (1): 9.5/13 MBProgress (1): 9.5/13 MBProgress (1): 9.5/13 MBProgress (1): 9.5/13 MBProgress (1): 9.6/13 MBProgress (1): 9.6/13 MBProgress (1): 9.6/13 MBProgress (1): 9.6/13 MBProgress (1): 9.6/13 MBProgress (1): 9.6/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.7/13 MBProgress (1): 9.8/13 MBProgress (1): 9.8/13 MBProgress (1): 9.8/13 MBProgress (1): 9.8/13 MBProgress (1): 9.8/13 MBProgress (1): 9.8/13 MBProgress (1): 9.9/13 MBProgress (1): 9.9/13 MBProgress (1): 9.9/13 MBProgress (1): 9.9/13 MBProgress (1): 9.9/13 MBProgress (1): 9.9/13 MBProgress (1): 10.0/13 MBProgress (1): 10.0/13 MBProgress (1): 10.0/13 MBProgress (1): 10/13 MB  Progress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 10/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 11/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 12/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13/13 MBProgress (1): 13 MB                      Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker/3.41.1-SNAPSHOT/checker-3.41.1-20231214.154806-13.jar (13 MB at 15 MB/s)
+Downloading from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.jar
+Progress (1): 7.8/31 kBProgress (1): 16/31 kB Progress (1): 25/31 kBProgress (1): 31 kB                      Downloaded from maven-snapshots: https://oss.sonatype.org/content/repositories/snapshots/org/checkerframework/checker-util/3.41.1-SNAPSHOT/checker-util-3.41.1-20231214.154806-13.jar (31 kB at 388 kB/s)
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 9 source files with javac [forked debug target 8] to target/classes
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[INFO] 
+[INFO] ---------------------< io.mybatis:mybatis-mapper >----------------------
+[INFO] Building mybatis-mapper 2.2.0-SNAPSHOT                             [4/9]
+[INFO]   from mapper/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-mapper ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-mapper ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-mapper:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-mapper ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 19 source files with javac [forked debug target 8] to target/classes
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleProvider.java:[237,81] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleProvider.java:[237,74] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalMapper.java:[37,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalMapper.java:[71,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalMapper.java:[76,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalMapper.java:[138,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityMapper.java:[103,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityMapper.java:[113,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleMapper.java:[104,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnMapper.java:[56,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/Fn.java:[163,20] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/Fn.java:[164,26] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/Fn.java:[164,14] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/Fn.java:[163,10] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElseGet(java.util.function.Supplier<? extends T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[914,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[914,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[915,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[921,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[921,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/example/ExampleWrapper.java:[922,86] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[75,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[75,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[76,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[76,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[77,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/fn/FnProvider.java:[77,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[182,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[182,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[183,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[183,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[184,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/base/EntityProvider.java:[184,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[56,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[56,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[57,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[57,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[58,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[58,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[82,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[82,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[83,42] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[83,35] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[84,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[84,36] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[108,81] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/mapper/src/main/java/io/mybatis/mapper/logical/LogicalProvider.java:[108,74] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[INFO] 
+[INFO] ---------------------< io.mybatis:mybatis-service >---------------------
+[INFO] Building mybatis-service 2.2.0-SNAPSHOT                            [5/9]
+[INFO]   from service/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-service ---
+[INFO] skip non existing resourceDirectory /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/resources
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-service ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-service:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-service ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [forked debug target 8] to target/classes
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[150,51] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[150,44] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[161,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[161,39] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[252,56] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/service/src/main/java/io/mybatis/service/AbstractService.java:[252,49] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[INFO] 
+[INFO] ------------------< io.mybatis:mybatis-activerecord >-------------------
+[INFO] Building mybatis-activerecord 2.2.0-SNAPSHOT                       [6/9]
+[INFO]   from activerecord/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-activerecord ---
+[INFO] Copying 2 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-activerecord ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-activerecord:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-activerecord ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 7 source files with javac [forked debug target 8] to target/classes
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/spring/MapperProvider.java:[105,50] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/spring/MapperProvider.java:[105,40] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/EntityRecord.java:[175,53] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/EntityRecord.java:[175,46] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/EntityRecord.java:[184,50] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/EntityRecord.java:[184,43] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/ExampleRecord.java:[79,58] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/activerecord/src/main/java/io/mybatis/activerecord/ExampleRecord.java:[79,51] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+[INFO] 
+[INFO] --------------------< io.mybatis:mybatis-generator >--------------------
+[INFO] Building mybatis-generator 2.2.0-SNAPSHOT                          [7/9]
+[INFO]   from generator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-generator ---
+[INFO] Copying 10 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-generator ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-generator:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-generator ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] -----------------------< io.mybatis:mybatis-jpa >-----------------------
+[INFO] Building mybatis-jpa 2.2.0-SNAPSHOT                                [8/9]
+[INFO]   from jpa/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-jpa ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-jpa ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-jpa:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-jpa ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [forked debug target 8] to target/classes
+[WARNING] [options] bootstrap class path not set in conjunction with -source 8
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[37,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[38,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[38,81] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[37,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[40,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[40,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[40,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[41,47] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[41,37] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[43,6] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[43,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[43,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[43,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[45,39] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[45,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[46,66] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[46,62] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[37,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jpa/src/main/java/io/mybatis/provider/jpa/JpaEntityColumnFactory.java:[76,11] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[INFO] 
+[INFO] -------------------< io.mybatis:mybatis-jakarta-jpa >-------------------
+[INFO] Building mybatis-jakarta-jpa 2.2.0-SNAPSHOT                        [9/9]
+[INFO]   from jakarta-jpa/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ mybatis-jakarta-jpa ---
+[INFO] Copying 3 resources from src/main/resources to target/classes
+[INFO] 
+[INFO] --- flatten:1.1.0:flatten (flatten) @ mybatis-jakarta-jpa ---
+[INFO] Generating flattened POM of project io.mybatis:mybatis-jakarta-jpa:jar:2.2.0-SNAPSHOT...
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ mybatis-jakarta-jpa ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 4 source files with javac [forked debug target 11] to target/classes
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[36,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[37,33] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[37,81] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[36,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[39,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[39,27] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[39,21] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>empty() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[40,47] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[40,37] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[42,6] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[42,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[42,41] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[42,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[44,39] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[44,29] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.isPresent() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[45,66] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[45,62] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.get() [METHOD]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[36,38] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[WARNING] /tmp/experiments/optional-paper-counts-repos/mapper/jakarta-jpa/src/main/java/io/mybatis/provider/jpa/JakartaJpaEntityColumnFactory.java:[75,11] [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for mybatis-parent 2.2.0-SNAPSHOT:
+[INFO] 
+[INFO] mybatis-parent ..................................... SUCCESS [  0.888 s]
+[INFO] mapper-bom ......................................... SUCCESS [  0.023 s]
+[INFO] mybatis-common ..................................... SUCCESS [  3.314 s]
+[INFO] mybatis-mapper ..................................... SUCCESS [  3.451 s]
+[INFO] mybatis-service .................................... SUCCESS [  1.199 s]
+[INFO] mybatis-activerecord ............................... SUCCESS [  1.507 s]
+[INFO] mybatis-generator .................................. SUCCESS [  0.030 s]
+[INFO] mybatis-jpa ........................................ SUCCESS [  1.510 s]
+[INFO] mybatis-jakarta-jpa ................................ SUCCESS [  1.550 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.595 s
+[INFO] Finished at: 2023-12-14T11:44:48-08:00
+[INFO] ------------------------------------------------------------------------
