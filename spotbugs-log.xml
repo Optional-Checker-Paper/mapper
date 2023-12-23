@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353438653" analysisTimestamp="1703353457743" release="">
+  <Project projectName="mybatis-activerecord">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/activerecord/target/classes</Jar>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-mapper/2.2.0-SNAPSHOT/mybatis-mapper-2.2.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-provider/2.2.1/mybatis-provider-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-config/1.1.1/mybatis-config-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-common/2.2.0-SNAPSHOT/mybatis-common-2.2.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis-spring/2.1.0/mybatis-spring-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-context/5.3.25/spring-context-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-aop/5.3.25/spring-aop-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-beans/5.3.25/spring-beans-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-core/5.3.25/spring-core-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-jcl/5.3.25/spring-jcl-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-expression/5.3.25/spring-expression-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.9/spring-boot-starter-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot/2.7.9/spring-boot-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.9/spring-boot-autoconfigure-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.9/spring-boot-starter-logging-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.7.9/spring-boot-configuration-processor-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar</AuxClasspathEntry>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/activerecord/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/activerecord/target</WrkDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.activerecord.spring.MapperProvider">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="40" end="138" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Class>
+    <Method classname="io.mybatis.activerecord.spring.MapperProvider" name="&lt;init&gt;" signature="(Lorg/mybatis/spring/SqlSessionTemplate;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="59" end="61" startBytecode="0" endBytecode="102" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Method>
+    <Field classname="io.mybatis.activerecord.spring.MapperProvider" name="sqlSessionTemplate" signature="Lorg/mybatis/spring/SqlSessionTemplate;" isStatic="false">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Field>
+    <LocalVariable name="sqlSessionTemplate" register="1" pc="17" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="60" end="60" startBytecode="17" endBytecode="17" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+  </BugInstance>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.activerecord.spring.MapperProvider">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="40" end="138" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Class>
+    <Field classname="io.mybatis.activerecord.spring.MapperProvider" name="applicationContext" signature="Lorg/springframework/context/ApplicationContext;" isStatic="true">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE">
+    <Class classname="io.mybatis.activerecord.spring.MapperProvider">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="40" end="138" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Class>
+    <Method classname="io.mybatis.activerecord.spring.MapperProvider" name="setApplicationContext" signature="(Lorg/springframework/context/ApplicationContext;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="83" end="84" startBytecode="0" endBytecode="78" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Method>
+    <Field classname="io.mybatis.activerecord.spring.MapperProvider" name="applicationContext" signature="Lorg/springframework/context/ApplicationContext;" isStatic="true">
+      <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.activerecord.spring.MapperProvider" start="83" end="83" startBytecode="1" endBytecode="1" sourcefile="MapperProvider.java" sourcepath="io/mybatis/activerecord/spring/MapperProvider.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" classAnnotationNames="org.springframework.context.annotation.Configuration">
+      <SourceLine classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" start="61" end="68" sourcefile="MapperProviderAutoConfiguration.java" sourcepath="io/mybatis/activerecord/spring/boot/autoconfigure/MapperProviderAutoConfiguration.java"/>
+    </Class>
+    <Method classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" name="&lt;init&gt;" signature="(Lio/mybatis/activerecord/spring/MapperProvider;)V" isStatic="false" classAnnotationNames="org.springframework.context.annotation.Configuration">
+      <SourceLine classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" start="61" end="63" startBytecode="0" endBytecode="69" sourcefile="MapperProviderAutoConfiguration.java" sourcepath="io/mybatis/activerecord/spring/boot/autoconfigure/MapperProviderAutoConfiguration.java"/>
+    </Method>
+    <Field classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" name="mapperProvider" signature="Lio/mybatis/activerecord/spring/MapperProvider;" isStatic="false" classAnnotationNames="org.springframework.context.annotation.Configuration">
+      <SourceLine classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" sourcefile="MapperProviderAutoConfiguration.java" sourcepath="io/mybatis/activerecord/spring/boot/autoconfigure/MapperProviderAutoConfiguration.java"/>
+    </Field>
+    <LocalVariable name="mapperProvider" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" start="62" end="62" startBytecode="6" endBytecode="6" sourcefile="MapperProviderAutoConfiguration.java" sourcepath="io/mybatis/activerecord/spring/boot/autoconfigure/MapperProviderAutoConfiguration.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:43:58 -0800" total_classes="9" referenced_classes="69" total_bugs="4" total_size="161" num_packages="3" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="4.99" clock_seconds="17.92" peak_mbytes="122.77" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="3" priority_1="1">
+    <PackageStats package="io.mybatis.activerecord" total_bugs="0" total_types="4" total_size="76">
+      <ClassStats class="io.mybatis.activerecord.ActiveRecord" sourceFile="ActiveRecord.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="io.mybatis.activerecord.EntityRecord" sourceFile="EntityRecord.java" interface="true" size="57" bugs="0"/>
+      <ClassStats class="io.mybatis.activerecord.ExampleRecord" sourceFile="ExampleRecord.java" interface="true" size="15" bugs="0"/>
+      <ClassStats class="io.mybatis.activerecord.MapperRecord" sourceFile="MapperRecord.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.activerecord.spring" total_bugs="3" total_types="2" total_size="60" priority_2="2" priority_1="1">
+      <ClassStats class="io.mybatis.activerecord.spring.MapperProvider" sourceFile="MapperProvider.java" interface="false" size="47" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="io.mybatis.activerecord.spring.MapperProvider$MapperProviderInstance" sourceFile="MapperProvider.java" interface="false" size="13" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.activerecord.spring.boot.autoconfigure" total_bugs="1" total_types="3" total_size="25" priority_2="1">
+      <ClassStats class="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration" sourceFile="MapperProviderAutoConfiguration.java" interface="false" size="5" bugs="0"/>
+      <ClassStats class="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderAutoConfiguration$AutoRegisterConfiguration" sourceFile="MapperProviderAutoConfiguration.java" interface="false" size="9" bugs="1" priority_2="1"/>
+      <ClassStats class="io.mybatis.activerecord.spring.boot.autoconfigure.MapperProviderProperties" sourceFile="MapperProviderProperties.java" interface="false" size="11" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="28" invocations="1" avgMicrosecondsPerInvocation="28470" maxMicrosecondsPerInvocation="28470" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353435003" analysisTimestamp="1703353451611" release="">
+  <Project projectName="mybatis-common">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/common/target/classes</Jar>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/common/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/common/target</WrkDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.core.RowsResponse">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="27" end="85" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.core.RowsResponse" name="getRows" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="72" end="72" startBytecode="0" endBytecode="64" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.core.RowsResponse" name="rows" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.common.core.RowsResponse" start="72" end="72" startBytecode="4" endBytecode="4" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.core.RowsResponse">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="27" end="85" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.core.RowsResponse" name="rows" signature="(Ljava/util/List;)Lio/mybatis/common/core/RowsResponse;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="62" end="63" startBytecode="0" endBytecode="90" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.core.RowsResponse" name="rows" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Field>
+    <LocalVariable name="rows" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.common.core.RowsResponse" start="62" end="62" startBytecode="2" endBytecode="2" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.core.RowsResponse">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="27" end="85" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.core.RowsResponse" name="setRows" signature="(Ljava/util/List;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" start="76" end="77" startBytecode="0" endBytecode="89" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.core.RowsResponse" name="rows" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.core.RowsResponse" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+    </Field>
+    <LocalVariable name="rows" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.common.core.RowsResponse" start="76" end="76" startBytecode="2" endBytecode="2" sourcefile="RowsResponse.java" sourcepath="io/mybatis/common/core/RowsResponse.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.exception.ServiceException">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="30" end="45" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.exception.ServiceException" name="getCode" signature="()Lio/mybatis/common/core/Code;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="40" end="40" startBytecode="0" endBytecode="46" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.exception.ServiceException" name="code" signature="Lio/mybatis/common/core/Code;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.common.exception.ServiceException" start="40" end="40" startBytecode="4" endBytecode="4" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.exception.ServiceException">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="30" end="45" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.exception.ServiceException" name="&lt;init&gt;" signature="(Lio/mybatis/common/core/Code;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="30" end="32" startBytecode="0" endBytecode="73" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.exception.ServiceException" name="code" signature="Lio/mybatis/common/core/Code;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Field>
+    <LocalVariable name="code" register="1" pc="10" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.common.exception.ServiceException" start="31" end="31" startBytecode="10" endBytecode="10" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.exception.ServiceException">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="30" end="45" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.exception.ServiceException" name="&lt;init&gt;" signature="(Lio/mybatis/common/core/Code;Ljava/lang/Throwable;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="35" end="37" startBytecode="0" endBytecode="80" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.exception.ServiceException" name="code" signature="Lio/mybatis/common/core/Code;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Field>
+    <LocalVariable name="code" register="1" pc="7" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.common.exception.ServiceException" start="36" end="36" startBytecode="7" endBytecode="7" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.common.exception.ServiceException">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="30" end="45" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.exception.ServiceException" name="setCode" signature="(Lio/mybatis/common/core/Code;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" start="44" end="45" startBytecode="0" endBytecode="61" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Method>
+    <Field classname="io.mybatis.common.exception.ServiceException" name="code" signature="Lio/mybatis/common/core/Code;" isStatic="false">
+      <SourceLine classname="io.mybatis.common.exception.ServiceException" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+    </Field>
+    <LocalVariable name="code" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.common.exception.ServiceException" start="44" end="44" startBytecode="2" endBytecode="2" sourcefile="ServiceException.java" sourcepath="io/mybatis/common/exception/ServiceException.java"/>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH" priority="1" rank="6" abbrev="NP" category="CORRECTNESS">
+    <Class classname="io.mybatis.common.util.I18n">
+      <SourceLine classname="io.mybatis.common.util.I18n" start="31" end="86" sourcefile="I18n.java" sourcepath="io/mybatis/common/util/I18n.java"/>
+    </Class>
+    <Method classname="io.mybatis.common.util.I18n" name="message" signature="(Ljava/util/Locale;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="io.mybatis.common.util.I18n" start="45" end="52" startBytecode="0" endBytecode="207" sourcefile="I18n.java" sourcepath="io/mybatis/common/util/I18n.java"/>
+    </Method>
+    <String value="null" role="STRING_NONSTRING_CONSTANT"/>
+    <SourceLine classname="io.mybatis.common.util.I18n" start="50" end="50" startBytecode="18" endBytecode="18" sourcefile="I18n.java" sourcepath="io/mybatis/common/util/I18n.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="io.mybatis.common.util.I18n" start="47" end="47" startBytecode="13" endBytecode="13" sourcefile="I18n.java" sourcepath="io/mybatis/common/util/I18n.java" role="SOURCE_LINE_KNOWN_NULL"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:43:55 -0800" total_classes="10" referenced_classes="61" total_bugs="8" total_size="321" num_packages="3" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="12.40" clock_seconds="54.64" peak_mbytes="144.30" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="7" priority_1="1">
+    <PackageStats package="io.mybatis.common.core" total_bugs="3" total_types="4" total_size="150" priority_2="3">
+      <ClassStats class="io.mybatis.common.core.Code" sourceFile="Code.java" interface="false" size="42" bugs="0"/>
+      <ClassStats class="io.mybatis.common.core.DataResponse" sourceFile="DataResponse.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="io.mybatis.common.core.Response" sourceFile="Response.java" interface="false" size="52" bugs="0"/>
+      <ClassStats class="io.mybatis.common.core.RowsResponse" sourceFile="RowsResponse.java" interface="false" size="35" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.common.exception" total_bugs="4" total_types="2" total_size="25" priority_2="4">
+      <ClassStats class="io.mybatis.common.exception.AssertException" sourceFile="AssertException.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.mybatis.common.exception.ServiceException" sourceFile="ServiceException.java" interface="false" size="15" bugs="4" priority_2="4"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.common.util" total_bugs="1" total_types="4" total_size="146" priority_1="1">
+      <ClassStats class="io.mybatis.common.util.Assert" sourceFile="Assert.java" interface="false" size="99" bugs="0"/>
+      <ClassStats class="io.mybatis.common.util.I18n" sourceFile="I18n.java" interface="false" size="18" bugs="1" priority_1="1"/>
+      <ClassStats class="io.mybatis.common.util.I18n$Language" sourceFile="I18n.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.mybatis.common.util.Utils" sourceFile="Utils.java" interface="false" size="27" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="33" invocations="1" avgMicrosecondsPerInvocation="33717" maxMicrosecondsPerInvocation="33717" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353440544" analysisTimestamp="1703353460841" release="">
+  <Project projectName="mybatis-jakarta-jpa">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jakarta-jpa/target/classes</Jar>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-provider/2.2.1/mybatis-provider-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-config/1.1.1/mybatis-config-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar</AuxClasspathEntry>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jakarta-jpa/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jakarta-jpa/target</WrkDir>
+  </Project>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.provider.jpa.SimpleTypeUtil">
+      <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" start="34" end="135" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+    </Class>
+    <Field classname="io.mybatis.provider.jpa.SimpleTypeUtil" name="JAVA8_DATE_TIME" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" start="35" end="35" startBytecode="59" endBytecode="59" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:44:00 -0800" total_classes="4" referenced_classes="65" total_bugs="1" total_size="110" num_packages="1" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="5.55" clock_seconds="22.58" peak_mbytes="115.43" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="io.mybatis.provider.jpa" total_bugs="1" total_types="4" total_size="110" priority_2="1">
+      <ClassStats class="io.mybatis.provider.jpa.JakartaJpaEntityClassFinder" sourceFile="JakartaJpaEntityClassFinder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.JakartaJpaEntityColumnFactory" sourceFile="JakartaJpaEntityColumnFactory.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.JakartaJpaEntityTableFactory" sourceFile="JakartaJpaEntityTableFactory.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.SimpleTypeUtil" sourceFile="SimpleTypeUtil.java" interface="false" size="55" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="28" invocations="1" avgMicrosecondsPerInvocation="28536" maxMicrosecondsPerInvocation="28536" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353439855" analysisTimestamp="1703353459356" release="">
+  <Project projectName="mybatis-jpa">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jpa/target/classes</Jar>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-provider/2.2.1/mybatis-provider-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-config/1.1.1/mybatis-config-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar</AuxClasspathEntry>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jpa/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/jpa/target</WrkDir>
+  </Project>
+  <BugInstance type="MS_PKGPROTECT" priority="2" rank="18" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.provider.jpa.SimpleTypeUtil">
+      <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" start="34" end="135" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+    </Class>
+    <Field classname="io.mybatis.provider.jpa.SimpleTypeUtil" name="JAVA8_DATE_TIME" signature="[Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.provider.jpa.SimpleTypeUtil" start="35" end="35" startBytecode="59" endBytecode="59" sourcefile="SimpleTypeUtil.java" sourcepath="io/mybatis/provider/jpa/SimpleTypeUtil.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:43:59 -0800" total_classes="4" referenced_classes="60" total_bugs="1" total_size="110" num_packages="1" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="3.89" clock_seconds="15.88" peak_mbytes="119.69" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="io.mybatis.provider.jpa" total_bugs="1" total_types="4" total_size="110" priority_2="1">
+      <ClassStats class="io.mybatis.provider.jpa.JpaEntityClassFinder" sourceFile="JpaEntityClassFinder.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.JpaEntityColumnFactory" sourceFile="JpaEntityColumnFactory.java" interface="false" size="32" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.JpaEntityTableFactory" sourceFile="JpaEntityTableFactory.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="io.mybatis.provider.jpa.SimpleTypeUtil" sourceFile="SimpleTypeUtil.java" interface="false" size="55" bugs="1" priority_2="1"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="24" invocations="1" avgMicrosecondsPerInvocation="24924" maxMicrosecondsPerInvocation="24924" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353435896" analysisTimestamp="1703353453495" release="">
+  <Project projectName="mybatis-mapper">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/mapper/target/classes</Jar>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-provider/2.2.1/mybatis-provider-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-config/1.1.1/mybatis-config-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-common/2.2.0-SNAPSHOT/mybatis-common-2.2.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar</AuxClasspathEntry>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/mapper/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/mapper/target</WrkDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.Example">
+      <SourceLine classname="io.mybatis.mapper.example.Example" start="72" end="464" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.Example" name="getOredCriteria" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example" start="398" end="398" startBytecode="0" endBytecode="64" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.Example" name="oredCriteria" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.mapper.example.Example" start="398" end="398" startBytecode="4" endBytecode="4" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.Example">
+      <SourceLine classname="io.mybatis.mapper.example.Example" start="72" end="464" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.Example" name="getSetValues" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example" start="405" end="405" startBytecode="0" endBytecode="64" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.Example" name="setValues" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.mapper.example.Example" start="405" end="405" startBytecode="4" endBytecode="4" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.Example$GeneratedCriteria">
+      <SourceLine classname="io.mybatis.mapper.example.Example$GeneratedCriteria" start="485" end="628" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.Example$GeneratedCriteria" name="getCriteria" signature="()Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example$GeneratedCriteria" start="624" end="624" startBytecode="0" endBytecode="64" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.Example$GeneratedCriteria" name="criteria" signature="Ljava/util/List;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.Example$GeneratedCriteria" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.mapper.example.Example$GeneratedCriteria" start="624" end="624" startBytecode="4" endBytecode="4" sourcefile="Example.java" sourcepath="io/mybatis/mapper/example/Example.java"/>
+  </BugInstance>
+  <BugInstance type="HSC_HUGE_SHARED_STRING_CONSTANT" priority="1" rank="16" abbrev="HSC" category="PERFORMANCE">
+    <Class classname="io.mybatis.mapper.example.ExampleProvider">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider" start="30" end="250" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Field classname="io.mybatis.mapper.example.ExampleProvider" name="EXAMPLE_WHERE_CLAUSE" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Field>
+    <Int value="2244"/>
+    <Int value="6" role="INT_OCCURRENCES"/>
+    <Class classname="io.mybatis.mapper.example.ExampleProvider$4">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider$4" start="226" end="238" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.example.ExampleProvider$5">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider$5" start="250" end="261" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider" start="21" end="421" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider$3">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider$3" start="97" end="109" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider$4">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider$4" start="121" end="132" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="HSC_HUGE_SHARED_STRING_CONSTANT" priority="1" rank="16" abbrev="HSC" category="PERFORMANCE">
+    <Class classname="io.mybatis.mapper.example.ExampleProvider">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider" start="30" end="250" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Field classname="io.mybatis.mapper.example.ExampleProvider" name="UPDATE_BY_EXAMPLE_WHERE_CLAUSE" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Field>
+    <Int value="2253"/>
+    <Int value="7" role="INT_OCCURRENCES"/>
+    <Class classname="io.mybatis.mapper.example.ExampleProvider$1">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider$1" start="151" end="164" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.example.ExampleProvider$2">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider$2" start="176" end="188" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.example.ExampleProvider$3">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleProvider$3" start="200" end="214" sourcefile="ExampleProvider.java" sourcepath="io/mybatis/mapper/example/ExampleProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider$7">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider$7" start="187" end="200" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider$8">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider$8" start="212" end="226" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+    <Class classname="io.mybatis.mapper.logical.LogicalProvider$9">
+      <SourceLine classname="io.mybatis.mapper.logical.LogicalProvider$9" start="239" end="251" sourcefile="LogicalProvider.java" sourcepath="io/mybatis/mapper/logical/LogicalProvider.java"/>
+    </Class>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.ExampleWrapper">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="46" end="938" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.ExampleWrapper" name="example" signature="()Lio/mybatis/mapper/example/Example;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="66" end="66" startBytecode="0" endBytecode="64" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.ExampleWrapper" name="example" signature="Lio/mybatis/mapper/example/Example;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Field>
+    <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="66" end="66" startBytecode="4" endBytecode="4" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.ExampleWrapper">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="46" end="938" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.ExampleWrapper" name="&lt;init&gt;" signature="(Lio/mybatis/mapper/BaseMapper;Lio/mybatis/mapper/example/Example;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="46" end="50" startBytecode="0" endBytecode="138" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.ExampleWrapper" name="baseMapper" signature="Lio/mybatis/mapper/BaseMapper;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Field>
+    <LocalVariable name="baseMapper" register="1" pc="6" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="47" end="47" startBytecode="6" endBytecode="6" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.mapper.example.ExampleWrapper">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="46" end="938" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Class>
+    <Method classname="io.mybatis.mapper.example.ExampleWrapper" name="&lt;init&gt;" signature="(Lio/mybatis/mapper/BaseMapper;Lio/mybatis/mapper/example/Example;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="46" end="50" startBytecode="0" endBytecode="138" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Method>
+    <Field classname="io.mybatis.mapper.example.ExampleWrapper" name="example" signature="Lio/mybatis/mapper/example/Example;" isStatic="false">
+      <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+    </Field>
+    <LocalVariable name="example" register="2" pc="11" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.mapper.example.ExampleWrapper" start="48" end="48" startBytecode="11" endBytecode="11" sourcefile="ExampleWrapper.java" sourcepath="io/mybatis/mapper/example/ExampleWrapper.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:43:55 -0800" total_classes="62" referenced_classes="181" total_bugs="8" total_size="1647" num_packages="8" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="3.59" clock_seconds="13.82" peak_mbytes="114.06" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="6" priority_1="2">
+    <PackageStats package="io.mybatis.mapper" total_bugs="0" total_types="2" total_size="15">
+      <ClassStats class="io.mybatis.mapper.BaseMapper" sourceFile="BaseMapper.java" interface="true" size="12" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.Mapper" sourceFile="Mapper.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.base" total_bugs="0" total_types="9" total_size="134">
+      <ClassStats class="io.mybatis.mapper.base.EntityMapper" sourceFile="EntityMapper.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider" sourceFile="EntityProvider.java" interface="false" size="29" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$1" sourceFile="EntityProvider.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$2" sourceFile="EntityProvider.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$3" sourceFile="EntityProvider.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$4" sourceFile="EntityProvider.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$5" sourceFile="EntityProvider.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$6" sourceFile="EntityProvider.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.base.EntityProvider$7" sourceFile="EntityProvider.java" interface="false" size="14" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.config" total_bugs="0" total_types="1" total_size="9">
+      <ClassStats class="io.mybatis.mapper.config.MapperUserConfig" sourceFile="MapperUserConfig.java" interface="false" size="9" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.cursor" total_bugs="0" total_types="1" total_size="3">
+      <ClassStats class="io.mybatis.mapper.cursor.CursorMapper" sourceFile="CursorMapper.java" interface="true" size="3" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.example" total_bugs="8" total_types="14" total_size="845" priority_2="6" priority_1="2">
+      <ClassStats class="io.mybatis.mapper.example.Example" sourceFile="Example.java" interface="false" size="155" bugs="2" priority_2="2"/>
+      <ClassStats class="io.mybatis.mapper.example.Example$Criteria" sourceFile="Example.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.Example$Criterion" sourceFile="Example.java" interface="false" size="60" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.Example$GeneratedCriteria" sourceFile="Example.java" interface="false" size="85" bugs="1" priority_2="1"/>
+      <ClassStats class="io.mybatis.mapper.example.Example$OrCriteria" sourceFile="Example.java" interface="false" size="170" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.Example$Order" sourceFile="Example.java" interface="false" size="11" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleMapper" sourceFile="ExampleMapper.java" interface="true" size="11" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider" sourceFile="ExampleProvider.java" interface="false" size="28" bugs="2" priority_1="2"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider$1" sourceFile="ExampleProvider.java" interface="false" size="16" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider$2" sourceFile="ExampleProvider.java" interface="false" size="13" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider$3" sourceFile="ExampleProvider.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider$4" sourceFile="ExampleProvider.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleProvider$5" sourceFile="ExampleProvider.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.example.ExampleWrapper" sourceFile="ExampleWrapper.java" interface="false" size="216" bugs="3" priority_2="3"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.fn" total_bugs="0" total_types="12" total_size="215">
+      <ClassStats class="io.mybatis.mapper.fn.Fn" sourceFile="Fn.java" interface="true" size="43" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Fn$1" sourceFile="Fn.java" interface="false" size="1" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Fn$FnImpl" sourceFile="Fn.java" interface="false" size="10" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Fn$FnName" sourceFile="Fn.java" interface="false" size="17" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Fn$Fns" sourceFile="Fn.java" interface="false" size="26" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.FnMapper" sourceFile="FnMapper.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.FnProvider" sourceFile="FnProvider.java" interface="false" size="7" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.FnProvider$1" sourceFile="FnProvider.java" interface="false" size="19" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.FnProvider$2" sourceFile="FnProvider.java" interface="false" size="23" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Reflections" sourceFile="Reflections.java" interface="false" size="41" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Reflections$ClassColumn" sourceFile="Reflections.java" interface="false" size="8" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.fn.Reflections$ClassField" sourceFile="Reflections.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.list" total_bugs="0" total_types="5" total_size="94">
+      <ClassStats class="io.mybatis.mapper.list.ListMapper" sourceFile="ListMapper.java" interface="true" size="4" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.list.ListProvider" sourceFile="ListProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.list.ListProvider$1" sourceFile="ListProvider.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.list.ListProvider$2" sourceFile="ListProvider.java" interface="false" size="27" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.list.ListProvider$3" sourceFile="ListProvider.java" interface="false" size="36" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="io.mybatis.mapper.logical" total_bugs="0" total_types="18" total_size="332">
+      <ClassStats class="io.mybatis.mapper.logical.LogicalColumn" sourceFile="LogicalColumn.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalMapper" sourceFile="LogicalMapper.java" interface="true" size="36" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider" sourceFile="LogicalProvider.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$1" sourceFile="LogicalProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$10" sourceFile="LogicalProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$11" sourceFile="LogicalProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$12" sourceFile="LogicalProvider.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$13" sourceFile="LogicalProvider.java" interface="false" size="14" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$14" sourceFile="LogicalProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$2" sourceFile="LogicalProvider.java" interface="false" size="24" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$3" sourceFile="LogicalProvider.java" interface="false" size="21" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$4" sourceFile="LogicalProvider.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$5" sourceFile="LogicalProvider.java" interface="false" size="9" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$6" sourceFile="LogicalProvider.java" interface="false" size="12" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$7" sourceFile="LogicalProvider.java" interface="false" size="18" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$8" sourceFile="LogicalProvider.java" interface="false" size="20" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$9" sourceFile="LogicalProvider.java" interface="false" size="15" bugs="0"/>
+      <ClassStats class="io.mybatis.mapper.logical.LogicalProvider$LogicalSqlScript" sourceFile="LogicalProvider.java" interface="true" size="5" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="34" invocations="1" avgMicrosecondsPerInvocation="34882" maxMicrosecondsPerInvocation="34882" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.8.2" sequence="0" timestamp="1703353437458" analysisTimestamp="1703353456303" release="">
+  <Project projectName="mybatis-service">
+    <Jar>/tmp/experiments/optional-paper-spotbugs-repos/mapper/service/target/classes</Jar>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-mapper/2.2.0-SNAPSHOT/mybatis-mapper-2.2.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-provider/2.2.1/mybatis-provider-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-config/1.1.1/mybatis-config-1.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis/3.5.13/mybatis-3.5.13.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/io/mybatis/mybatis-common/2.2.0-SNAPSHOT/mybatis-common-2.2.0-SNAPSHOT.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/mybatis/mybatis-spring/2.1.0/mybatis-spring-2.1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-context/5.3.25/spring-context-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-aop/5.3.25/spring-aop-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-beans/5.3.25/spring-beans-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-core/5.3.25/spring-core-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-jcl/5.3.25/spring-jcl-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/spring-expression/5.3.25/spring-expression-5.3.25.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-starter/2.7.9/spring-boot-starter-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot/2.7.9/spring-boot-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/2.7.9/spring-boot-autoconfigure-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-starter-logging/2.7.9/spring-boot-starter-logging-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/apache/logging/log4j/log4j-to-slf4j/2.17.2/log4j-to-slf4j-2.17.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.2/log4j-api-2.17.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/jul-to-slf4j/1.7.36/jul-to-slf4j-1.7.36.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/yaml/snakeyaml/1.30/snakeyaml-1.30.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/springframework/boot/spring-boot-configuration-processor/2.7.9/spring-boot-configuration-processor-2.7.9.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar</AuxClasspathEntry>
+    <SrcDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/service/src/main/java</SrcDir>
+    <WrkDir>/tmp/experiments/optional-paper-spotbugs-repos/mapper/service/target</WrkDir>
+  </Project>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="io.mybatis.service.AbstractService">
+      <SourceLine classname="io.mybatis.service.AbstractService" start="55" end="274" sourcefile="AbstractService.java" sourcepath="io/mybatis/service/AbstractService.java"/>
+    </Class>
+    <Method classname="io.mybatis.service.AbstractService" name="setBaseMapper" signature="(Lio/mybatis/mapper/BaseMapper;)V" isStatic="false">
+      <SourceLine classname="io.mybatis.service.AbstractService" start="62" end="63" startBytecode="0" endBytecode="89" sourcefile="AbstractService.java" sourcepath="io/mybatis/service/AbstractService.java"/>
+    </Method>
+    <Field classname="io.mybatis.service.AbstractService" name="baseMapper" signature="Lio/mybatis/mapper/BaseMapper;" isStatic="false">
+      <SourceLine classname="io.mybatis.service.AbstractService" sourcefile="AbstractService.java" sourcepath="io/mybatis/service/AbstractService.java"/>
+    </Field>
+    <LocalVariable name="baseMapper" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="io.mybatis.service.AbstractService" start="62" end="62" startBytecode="2" endBytecode="2" sourcefile="AbstractService.java" sourcepath="io/mybatis/service/AbstractService.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 Dec 2023 09:43:57 -0800" total_classes="4" referenced_classes="28" total_bugs="1" total_size="97" num_packages="1" java_version="11.0.20.1" vm_version="11.0.20.1+0" cpu_seconds="4.89" clock_seconds="18.87" peak_mbytes="117.42" alloc_mbytes="512.00" gc_seconds="0.00" priority_2="1">
+    <PackageStats package="io.mybatis.service" total_bugs="1" total_types="4" total_size="97" priority_2="1">
+      <ClassStats class="io.mybatis.service.AbstractService" sourceFile="AbstractService.java" interface="false" size="69" bugs="1" priority_2="1"/>
+      <ClassStats class="io.mybatis.service.BaseService" sourceFile="BaseService.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="io.mybatis.service.EntityService" sourceFile="EntityService.java" interface="true" size="18" bugs="0"/>
+      <ClassStats class="io.mybatis.service.ExampleService" sourceFile="ExampleService.java" interface="true" size="9" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="30" invocations="1" avgMicrosecondsPerInvocation="30607" maxMicrosecondsPerInvocation="30607" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
